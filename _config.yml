@@ -171,7 +171,9 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Conversion
 markdown: kramdown
-highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
@@ -269,3 +271,4 @@ defaults:
       author_profile: false # 왼쪽 저자 프로필
 
 date_format: "%Y-%m-%d"
+
