@@ -75,7 +75,7 @@ plt.ylabel('count')
 plt.show()
 ```
 
-![png]({{site.url}}/../../assets/images/2023-06-01-convVisual/output_9_0.png)
+![png]({{site.url}}/../../assets/images/2023-06-02-convVisual/output_9_0.png)
 
 이번에는 32개의 커널을 16개씩 두 줄에 출력해보자
 
@@ -89,7 +89,7 @@ for i in range(2):
 plt.show()
 ```
 
-![png]({{site.url}}/../../assets/images/2023-06-01-convVisual/output_11_0.png)
+![png]({{site.url}}/../../assets/images/2023-06-02-convVisual/output_11_0.png)
 
 위의 커널들을 보면 어떤 패턴을 볼 수 있다.  
 예를 들어 첫 번째 줄의 3번째 커널의 가운데 가중치들의 값을 보면 높은 것을 확인할 수 있다.  
@@ -136,7 +136,7 @@ plt.ylabel('count')
 plt.show()
 ```
 
-![png]({{site.url}}/../../assets/images/2023-06-01-convVisual/output_20_0.png)
+![png]({{site.url}}/../../assets/images/2023-06-02-convVisual/output_20_0.png)
 
 비교적 고른 분포를 보인다. 그 이유는 텐서플로가 신경망의 가중치를 처음 초기화할 때 균등분포에서 랜덤하게 값을 선택하기 때문이다.  
 이전처럼 커널들을 그림으로 출력해보자
@@ -151,7 +151,7 @@ for i in range(2):
 plt.show()
 ```
 
-![png]({{site.url}}/../../assets/images/2023-06-01-convVisual/output_22_0.png)
+![png]({{site.url}}/../../assets/images/2023-06-02-convVisual/output_22_0.png)
 
 히스토그램에서 보이듯 전체적으로 가중치가 밋밋하게 초기화 되었다.  
 이를 통해 알 수 있는 것은 훈련이 끝난 합성곱 신경망이 패션 MNIST 데이터셋의 분류 정확도를 높이기 위해 유용한 패턴을 학습했다는 사실을 눈치챌 수 있다.
@@ -265,7 +265,7 @@ plt.show()
     Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/t10k-images-idx3-ubyte.gz
     4422102/4422102 [==============================] - 0s 0us/step
 
-![png]({{site.url}}/../../assets/images/2023-06-01-convVisual/output_39_1.png)
+![png]({{site.url}}/../../assets/images/2023-06-02-convVisual/output_39_1.png)
 
 이제 Conv2D 층이 만드는 특성 맵을 출력해 보자  
 predict() 메서드는 항상 입력의 첫번째 차원이 배치 차원일 것으로 기대한다.  
@@ -295,7 +295,7 @@ for i in range(4):
 plt.show()
 ```
 
-![png]({{site.url}}/../../assets/images/2023-06-01-convVisual/output_43_0.png)
+![png]({{site.url}}/../../assets/images/2023-06-02-convVisual/output_43_0.png)
 
 두번째 합성곱 층이 만든 특성 맵도 같은 방식으로 확인 가능하다.
 
@@ -326,7 +326,7 @@ for i in range(8):
 plt.show()
 ```
 
-![png]({{site.url}}/../../assets/images/2023-06-01-convVisual/output_48_0.png)
+![png]({{site.url}}/../../assets/images/2023-06-02-convVisual/output_48_0.png)
 
 이 특성 맵은 시각적으로 이해하기 어렵다. 왜 그럴까?  
 두 번째 합성곱 층의 필터 크기는 (3,3,32)이다.  
