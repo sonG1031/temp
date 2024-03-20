@@ -21,7 +21,7 @@ title_separator: "|"
 subtitle: "무한추구 無限追求" # site tagline that appears below site title in masthead
 name: "Minsub Song"
 description: "송민섭의 연구 기록입니다."
-url: "https://sonG1031.github.io"
+url: "https://songminsopu.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
